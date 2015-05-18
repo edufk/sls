@@ -24,20 +24,6 @@
     });
 
     /**
-    * Handle the Check all link on Page 3.
-    */
-    $('a.check-all').click(function(e){
-      e.preventDefault();
-
-      if ($('#page-3 .page-content td.green input').is(':checked')) {
-        $('#page-3 .page-content td.green input').prop('checked', false);
-      }
-      else {
-        $('#page-3 .page-content td.green input').prop('checked', true);
-      }
-    });
-
-    /**
     * Adjunst the width of the textboxes on page 2.
     */
     $('#page-2 .values input').each(function(){
