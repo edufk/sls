@@ -4,6 +4,7 @@ body {
   font-family: arial;
   font-size: 12px;
   line-height: 18px;
+  margin: 0;
 }
 h1 {
   text-transform: uppercase;
@@ -106,11 +107,11 @@ p {
   text-decoration: none;
   width: 120px;
   line-height: 65px;
-  background: url(../images/arrows.png) no-repeat 0 -70px;
+  background: url(../images/arrows.png) no-repeat 2px -70px;
   margin: 0 auto 10px;
 }
 .footer-nav a.active {
-  background-position: 0 0;
+  background-position: 2px 0;
 }
 
 /* Page general */
@@ -124,7 +125,6 @@ p {
 
 /* Page header styles. */
 .page .page-header {
-  border-bottom: 1px solid #FFF;
   height: 26px;
   line-height: 26px;
   margin-bottom: 15px;
@@ -133,7 +133,7 @@ p {
 }
 .page .page-header .nav {
   position: absolute;
-  top: 0;
+  top: -5;
   right: 0;
 }
 .page .page-header .nav a {
@@ -155,7 +155,7 @@ p {
 
 /* Page content styles.*/
 .page .page-content .row {
-  margin-bottom: 7px;
+  margin-bottom: 5px;
   font-size: 11px;
   line-height: 14px;
 }
@@ -178,7 +178,7 @@ p {
 .page .page-content .row .values input,
 .page .page-content .row .values textarea {
   width: 100%;
-  line-height: 10px;
+  line-height: 9px;
   font-size: 10px;
 }
 .page .page-content .row.biggest-row label,
@@ -200,6 +200,7 @@ p {
 /* Page 3 styles. */
 .page#page-3 .page-header {
   border-bottom: none;
+  height:10px;
 }
 .page#page-3 thead tr {
   padding-bottom: 5px;
@@ -208,6 +209,9 @@ p {
 }
 .page#page-3 label {
   margin: 0;
+}
+.page#page-3 thead tr td {
+  text-align: center;
 }
 .page#page-3 thead tr td:nth-child(1) {
   width: 15%;
