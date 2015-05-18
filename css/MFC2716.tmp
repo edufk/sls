@@ -27,7 +27,6 @@ p {
   flex: 1 100%;
   order: 1;
   text-align: center;
-  margin: 5px auto;
 }
 .column {
   float: left;
@@ -73,7 +72,7 @@ p {
   border-bottom: 1px solid #FFF;
   border-right: 1px solid #FFF;
   text-transform: uppercase;
-  padding: 4px 0;
+  padding: 8px 0;
 }
 .tabs-container .tabs ul li:last-child a {
   border-right: none;
@@ -104,14 +103,16 @@ p {
   display: block;
   color: #FFF;
   text-decoration: none;
-  width: 120px;
-  line-height: 65px;
-  background: url(../images/arrows.png) no-repeat 0 -70px;
+  width: 100px;
+  line-height: 50px;
+  background: #CCC;
   margin: 0 auto 10px;
 }
 .footer-nav a.active {
-  background-position: 0 0;
+  background: #EFEFEF;
+  color: darkblue;
 }
+
 
 /* Page general */
 .page {
@@ -124,23 +125,24 @@ p {
 
 /* Page header styles. */
 .page .page-header {
+  margin-left: 115px;
   border-bottom: 1px solid #FFF;
-  height: 26px;
-  line-height: 26px;
+  height: 35px;
+  line-height: 35px;
   margin-bottom: 15px;
-  position: relative;
-  text-align: center;
+}
+.page .page-header h2 {
+  float: left;
 }
 .page .page-header .nav {
-  position: absolute;
-  top: 0;
-  right: 0;
+  float: right;
+  margin-top: 2px;
 }
 .page .page-header .nav a {
   display: block;
   float: left;
-  width: 26px;
-  line-height: 26px;
+  width: 30px;
+  line-height: 30px;
   border-radius: 15px;
   background: darkblue;
   text-decoration: none;
@@ -156,42 +158,49 @@ p {
 /* Page content styles.*/
 .page .page-content .row {
   margin-bottom: 7px;
-  font-size: 11px;
-  line-height: 14px;
 }
 .page .page-content .row label {
-  width: 24ex;
+  width: 2ex;
+  line-height: 24px;
   display: block;
   float: left;
-  margin-right: 5px;
+  margin-right: 10px;
   background: #000;
   color: #FFF;
-  padding: 5px 10px;
+  padding: 3px 10px;
   box-sizing: border-box;
 }
 .page .page-content .row .values {
   display: inline-block;
   width: 60ex;
+  line-height: 24px;
   background: #FFF;
   padding: 3px;
 }
 .page .page-content .row .values input,
 .page .page-content .row .values textarea {
   width: 100%;
-  line-height: 10px;
-  font-size: 10px;
+  line-height: 18px;
 }
 .page .page-content .row.biggest-row label,
 .page .page-content .row.biggest-row .values,
 .page .page-content .row.biggest-row textarea {
-  height: 235px;
+  height: 100px;
 }
 .page .page-content .row.biggest-row label {
-  line-height: 241px;
-  height: 241px;
+  line-height: 100px;
 }
 
 /* Page 2 styles. */
+.page#page-2 .page-header {
+  margin-left: 150px;
+}
+.page#page-2 .page-content .row label {
+  width: 20ex;
+}
+.page#page-2 .page-content .row .values {
+  width: 60ex;
+}
 .page#page-2 .page-content .row .values input {
   float: left;
   margin-right: 3px;
@@ -218,13 +227,8 @@ p {
 .page#page-3 thead tr td:nth-child(3) {
   width: 11%;
 }
-.page#page-3 thead tr td:nth-child(5),
-.page#page-3 thead tr td:nth-child(6),
-.page#page-3 thead tr td:nth-child(7) {
-  width: 5%;
-}
-.page#page-3 thead tr.row {
-  line-height: 11px;
+.page#page-3 thead tr td:nth-child(4) {
+
 }
 .green {
   background: darkgreen;
@@ -240,5 +244,4 @@ p {
   text-decoration: none;
   text-align: center;
   display: block;
-  background: url(../images/checkmark.png) no-repeat 7px center;
 }
