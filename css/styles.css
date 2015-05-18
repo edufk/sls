@@ -235,10 +235,12 @@ p {
 .yellow {
   background: yellow;
 }
-.green a {
+table thead .green {
   color: #FFF;
   text-decoration: none;
   text-align: center;
   display: block;
-  background: url(../images/checkmark.png) no-repeat 7px center;
+  background-image: url(../images/checkmark.png);
+  background-repeat: no-repeat;
+  background-position: 2px center;
 }
