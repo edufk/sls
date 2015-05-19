@@ -230,6 +230,9 @@ p {
 .page#page-3 thead tr.row {
   line-height: 11px;
 }
+.page#page-3 tr td {
+  display: table-cell;
+}
 .green {
   background: darkgreen;
 }
